@@ -1,32 +1,32 @@
-Intern Performance Predictor
-What it is
+Intern-Performance-Predictor
 
-A machine learning project that predicts whether an intern is likely to excel or struggle based on task completion time, feedback ratings, and attendance.
+A machine learning model to predict whether an intern is likely to excel or struggle based on task completion time, feedback, and attendance.
 
-How it works
+Features
 
-Uses a Random Forest Classifier in Python.
+Predict intern performance (Excel/Struggle)
 
-Trains on past intern data (intern_data.csv) with features:
+Train and test using historical intern data
 
-task_time – time to complete tasks
+Visualize feature importance and confusion matrix
 
-feedback – feedback rating (1–5)
+Make predictions on new intern data
 
-attendance – attendance percentage (0–1)
+Installation
 
-Predicts outcome: 1 = Excel, 0 = Struggle.
+Clone this repository:
 
-How to use
+git clone https://github.com/<your-username>/Intern-Performance-Predictor.git
 
-Open Intern_Performance_Model.ipynb in Jupyter Notebook.
 
-Make sure intern_data.csv is in the same folder.
+Install dependencies:
 
-Run all cells to train the model and evaluate it.
+pip install pandas scikit-learn matplotlib seaborn
 
-Add your own intern data in the new_data dataframe to get predictions.
+Usage
 
-Tools
+Open the Jupyter notebook and run all cells:
 
-Python, Pandas, scikit-learn, Matplotlib, Seaborn
+# Import notebook and dataset
+Intern_Performance_Model.ipynb
+# Predict new interns by modifying the new_data dataframe
