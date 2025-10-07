@@ -16,7 +16,7 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/<your-username>/Intern-Performance-Predictor.git
+git clone https://github.com/<HassanThakra>/Intern-Performance-Predictor.git
 
 
 Install dependencies:
