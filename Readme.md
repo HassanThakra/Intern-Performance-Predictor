@@ -1,59 +1,32 @@
 Intern Performance Predictor
-Project Overview
+What it is
 
-This project predicts intern performance (excel or struggle) based on task completion time, feedback ratings, and attendance.
-It uses a Random Forest Classifier to determine which interns are likely to excel or struggle.
+A machine learning project that predicts whether an intern is likely to excel or struggle based on task completion time, feedback ratings, and attendance.
 
-Dataset
+How it works
 
-intern_data.csv contains:
+Uses a Random Forest Classifier in Python.
 
-Column	Description
-intern_id	Unique ID for each intern
-task_time	Average time to complete tasks (minutes)
-feedback	Feedback rating (1–5)
-attendance	Attendance fraction (0.0–1.0)
-outcome	Label: 1 = Excel, 0 = Struggle
-Approach
+Trains on past intern data (intern_data.csv) with features:
 
-Load and inspect the dataset using Pandas.
+task_time – time to complete tasks
 
-Split data into features (task_time, feedback, attendance) and target (outcome).
+feedback – feedback rating (1–5)
 
-Train a Random Forest Classifier on the training set.
+attendance – attendance percentage (0–1)
 
-Evaluate the model using accuracy, classification report, and confusion matrix.
+Predicts outcome: 1 = Excel, 0 = Struggle.
 
-Visualize feature importance to see which factors influence performance.
-
-Predict performance for new interns.
-
-How to Run
-
-Clone or download this repository.
-
-Make sure intern_data.csv is in the same folder as the notebook.
+How to use
 
 Open Intern_Performance_Model.ipynb in Jupyter Notebook.
 
-Run all cells to train the model and make predictions.
+Make sure intern_data.csv is in the same folder.
 
-Optional: Modify the new_data dataframe to predict performance for other interns.
+Run all cells to train the model and evaluate it.
 
-Results
+Add your own intern data in the new_data dataframe to get predictions.
 
-Model predicts which interns are likely to excel or struggle.
+Tools
 
-Accuracy on test data: ~0.8 (may vary depending on dataset).
-
-Feature importance and confusion matrix visualizations help understand model behavior.
-
-Tools & Libraries
-
-Python
-
-Pandas
-
-scikit-learn
-
-Matplotlib & Seaborn
+Python, Pandas, scikit-learn, Matplotlib, Seaborn
